@@ -5,12 +5,14 @@ public class MenuItem {
     private double price;
     private String description;
     private String category;
+    private boolean isNew;
 
-    public MenuItem(String name, String category, double price, String description) {
+    public MenuItem(String name, String category, double price, String description, boolean isNew) {
         this.name = name;
         this.category = category;
         this.price = price;
         this.description = description;
+        this.isNew = isNew;
     }
 
 
@@ -26,6 +28,11 @@ public class MenuItem {
         return description;
     }
 
+    public String getCategory() {
+        return category;
+    }
 
-
-   }
+    public boolean isNew() {
+        return isNew;
+    }
+}
